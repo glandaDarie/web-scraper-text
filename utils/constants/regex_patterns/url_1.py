@@ -1,0 +1,8 @@
+REGEX_QUERY_PARAMS_PATTERN : str = r'(\w+)=(\w+)'
+REGEX_PIDS_PATTERN : str = r'id="(p\d{{{}}})" class="(post has-profile bg[12])(?: online)?"'
+REGEX_POST_CONTENT_ID : str = '<div id="post_content{}">(.*?)(</div>(.*?)</div>|</div>)'
+REGEX_POST_CONTENT_TEXT : str = r'<div class="content">(.*?)</div>|<div class="content">(.*?)$'
+REGEX_MATCH_CONTENT_AFTER_BLOCKQUOTE : str = r'</blockquote>(.*?)</div>'
+REGEX_REMOVE_FROM_BLOCKQUOTE_TAGS : str =r'<blockquote><div><cite>(.*?)</cite>(.*)'
+REGEX_REMOVE_CONTENT_FROM_IMAGE : str = r'<img.*?>'
+REGEX_REPLACE_BR_WITH_EMPTY_CHARACTER : str = r'<br>'
